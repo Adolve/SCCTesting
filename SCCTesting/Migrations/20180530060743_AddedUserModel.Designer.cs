@@ -12,9 +12,10 @@ using System;
 namespace SCCTesting.Migrations
 {
     [DbContext(typeof(SCCTestingDbContext))]
-    partial class SCCTestingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180530060743_AddedUserModel")]
+    partial class AddedUserModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
